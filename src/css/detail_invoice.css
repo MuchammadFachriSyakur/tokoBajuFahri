@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body,html{
+  overflow-x: hidden;
+}
+.navbar {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: black;
+  padding: 12px 4px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navbar .grid1 {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+}
+.navbar .grid1 .logo {
+  box-sizing: border-box;
+  width: 65px;
+  height: 65px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navbar .grid1 .hamburger {
+  box-sizing: border-box;
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.navbar .grid1 .hamburger span {
+  box-sizing: border-box;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 4px;
+}
+.navbar ul {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 20px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.navbar ul li form button {
+  box-sizing: border-box;
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.navbar ul li form input {
+  box-sizing: border-box;
+  display: none;
+}
+.container{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow: auto;
+  padding: 32px 8px;
+  gap: 20px;
+}
+.container table{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1000px;
+}
+.container table thead{
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+}
+.container table thead tr th{
+  box-sizing: border-box;
+  padding: 8px;
+}
+.container table thead tr th:first-child{
+  border-top-left-radius: 8px;
+}
+.container table thead tr th:last-child{
+  border-top-right-radius: 8px;
+}
+.container table tbody tr td{
+  padding: 4px;
+}
+@media (min-width: 1024px) {
+  .navbar .nav-link {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .nav-link {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .grid1 {
+    width: 100%;
+  }
+  .navbar .grid1 .hamburger {
+    display: flex;
+  }
+  .navbar .nav-link {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 450px;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: auto;
+  }
+  .navbar .nav-link.aktif {
+    display: flex;
+  }
+}

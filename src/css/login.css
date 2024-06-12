@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: linear-gradient(to left bottom, rgb(0, 52, 255), blueviolet);
+}
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+.form_login_user {
+  box-sizing: border-box;
+  max-width: 450px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 100px 8px;
+  background-color: white;
+}
+.form_login_user .title {
+  box-sizing: border-box;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.form_login_user .input {
+  box-sizing: border-box;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 12px;
+  gap: 4px;
+}
+.form_login_user .input input {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 12px 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #eaeeed;
+}
+.form_login_user .input input:focus {
+  border: 1px solid rgb(0, 0, 0, 0.7);
+  outline: none;
+  box-shadow: 0 0 0 3px rgb(0, 0, 0, 0.3);
+}
+.form_login_user .link_to_register {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-top: 16px;
+  color: black;
+}
+.form_login_user .link_to_register:hover {
+  cursor: pointer;
+  color: red;
+}
+.form_login_user .link_to_register:active {
+  color: green;
+}
+.form_login_user #login,
+.form_login_user #register {
+  box-sizing: border-box;
+  width: 80%;
+  margin-top: 12px;
+  padding: 12px 4px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+}
+.form_login_user #login:hover,
+.form_login_user #register:hover {
+  background-color: #eaeeed;
+  color: black;
+}

@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 8px;
+    background-color: black;
+    color: white;
+}
+.navbar .logo{
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+}
+.navbar .toggle{
+    box-sizing: border-box
+}

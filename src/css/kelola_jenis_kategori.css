@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container .grid2{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.container .grid2 .title{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.container .grid2 .tambah_kategori{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 700px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2rem;
+}
+.container .grid2 .tambah_kategori input{
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #737373;
+  padding: 12px;
+}
+.container .grid2 .tambah_kategori input:focus{
+  border: 1px solid black;
+}
+.container .grid2 .tambah_kategori button{
+  box-sizing: border-box;
+  padding: 6px 12px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgb(0,0,0,0.25);
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  background-color: #197e00;
+  color: white;
+}
+.container .grid2 .card{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.container .grid2 .card .item_kategori{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.container .grid2 .card .item_kategori input{
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #737373;
+  padding: 5px;
+}
+.container .grid2 .card .item_kategori input:focus{
+  border: 1px solid black;
+}
+.container .grid2 .card .item_kategori .aksi{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.container .grid2 .card .item_kategori .aksi button,.container .grid2 .card .item_kategori .aksi a{
+  box-sizing: border-box;
+  padding: 6px 12px;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgb(0,0,0,0.25);
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+}
+.container .grid2 .card .item_kategori .aksi button{
+  background-color: #ffa800;
+  color: white;
+}
+.container .grid2 .card .item_kategori .aksi a{
+  background-color: red;
+  color: white;
+}

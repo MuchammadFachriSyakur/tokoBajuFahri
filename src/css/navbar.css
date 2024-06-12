@@ -1,0 +1,216 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.navbar {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  background-color: black;
+  padding: 12px 4px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navbar .grid1 {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px;
+}
+.navbar .grid1 .logo {
+  box-sizing: border-box;
+  width: 65px;
+  height: 65px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.navbar .grid1 .hamburger {
+  box-sizing: border-box;
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.navbar .grid1 .hamburger span {
+  box-sizing: border-box;
+  width: 28px;
+  height: 3px;
+  background-color: white;
+  border-radius: 4px;
+}
+.navbar ul {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 20px;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+.navbar ul li form button {
+  box-sizing: border-box;
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.navbar ul li form input {
+  box-sizing: border-box;
+  display: none;
+}
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  padding: 4px;
+}
+.slide-container{
+  box-sizing: border-box;
+  width: 100%;
+  height: 350px;
+  margin: 0 auto;
+}
+.slide-container .slides{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: scroll;
+}
+.slide-container .slides::-webkit-scrollbar{
+  display: none;
+}
+.slide-container .slides img{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+} 
+.container .wrap_card {
+  box-sizing: border-box;
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.container .wrap_card .card_item{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+}
+.container .wrap_card .card_item input{
+  box-sizing: border-box;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.container .wrap_card .card_item #username,
+.container .wrap_card .card_item #id,
+.container .wrap_card .card_item #gambar_barang,
+.container .wrap_card .card_item #kategori_produk{
+  display: none;
+}
+.container .wrap_card .card_item .gambar{
+  box-sizing: border-box;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.wrap_card form button {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+.wrap_card form button:active{
+  background-color: white;
+  color: black;
+}
+.container .wrap_card .card_item #nama_barang{
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+.container .wrap_card .card_item #harga_barang{
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 4px;
+  margin-bottom: 12px;
+}
+@media (min-width: 1024px) {
+  .navbar .nav-link {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .nav-link {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar .grid1 {
+    width: 100%;
+  }
+  .navbar .grid1 .hamburger {
+    display: flex;
+  }
+  .navbar .nav-link {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 450px;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow: auto;
+  }
+  .navbar .nav-link.aktif {
+    display: flex;
+  }
+}

@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .container .grid2 .form_checkout{
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 80px;
+  }
+  .container .grid2 .form_checkout .form_1{
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  .container .grid2 .form_checkout .form_1 label{
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .container .grid2 .form_checkout .form_1 input{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 6px;
+    outline: none;
+    border: 1.5px solid #CBD5E1;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
+  }
+  .container .grid2 .form_checkout .form_1 input:focus{
+    border: 1.5px solid #334155;
+  }
+  .container .grid2 .form_checkout .btn_submit_form{
+     box-sizing: border-box;
+     padding: 8px 20px;
+     border: 1px solid #6366F1;
+     border-radius: 5px;
+     font-weight: 500;
+     background-color: transparent;
+     color: #6366F1;
+     transition: all .3s ease-in-out;
+   }
+  .container .grid2 .form_checkout .btn_submit_form:hover{
+    background-color: #6366F1;
+    color: white;
+  }
+  .container .grid2 .responsive-table{
+    box-sizing: border-box;
+    width: 100%;
+    overflow-x: auto;
+  }
+  .container .grid2 table{
+    box-sizing: border-box;
+    width: 100%;
+  }
+  .container .grid2 table td,.container .grid2 table th{
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  .container .grid2 table th{
+    background-color: #217dff;
+    color: #fff;
+  }

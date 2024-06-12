@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,body{
+  overflow-x: hidden;
+}
+.nav-bar{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  padding: 12px;
+}
+.nav-bar .toggle{
+  box-sizing: border-box;
+  height: 20px;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.nav-bar .toggle span{
+  box-sizing: border-box;
+  width: 28px;
+  height: 3px;
+  background-color: black;
+  border-radius: 3px;
+}
+.container{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.container .grid1{
+  box-sizing: border-box;
+  width: 30%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 8px;
+  overflow: auto;
+}
+.container .grid1 .wrap_linked{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .grid1 .wrap_linked li{
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid black;
+  list-style-type: none;
+  padding: 16px;
+  background-color: white;
+}
+.container .grid1 .wrap_linked li:hover{
+  cursor: pointer;
+  background-color: #eaeaea;
+  transition: all .3s ease-in-out;
+}
+.container .grid1 .wrap_linked li:first-child{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.container .grid1 .wrap_linked li:last-child{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.container .grid1 .wrap_linked li a{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+}
+.container .grid1 .wrap_linked li form button{
+  box-sizing: border-box;
+  padding: 8px 12px;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+}
+.container .grid2{
+  box-sizing: border-box;
+  width: 70%;
+  height: 100%;
+  background-color: white;
+  padding: 8px;
+  overflow: auto;
+}
+.container .grid2 .wrap_card{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+.container .grid2 .wrap_card .card{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 8px;
+}
+.container .grid2 .wrap_card .card .Picture{
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 250px;
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.container .grid2 .wrap_card .card .nama_barang,.container .grid2 .wrap_card .card .harga_barang,.container .grid2 .wrap_card .card .deskripsi_barang{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.container .grid2 .wrap_card .card .aksi{
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.container .grid2 .wrap_card .card .aksi a{
+  box-sizing: border-box;
+  padding: 8px 12px;
+  background-color: black;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.container .grid2 .wrap_card .card .aksi a:hover{
+  cursor: pointer;
+  background-color: #eaeaea;
+  transition: all .3s ease-in-out;
+}
+@media(max-width: 768px){
+  .container .grid1{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 200%;
+  }
+  .container .grid2{
+    width: 100%;
+  }
+  .container .grid1.aktif{
+    top: 70px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .nav-bar{
+    justify-content: space-between;
+    padding: 5px;
+    height: 70px;
+  }
+  .nav-bar .toggle{
+    display: flex;
+  }
+}
